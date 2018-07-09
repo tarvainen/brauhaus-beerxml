@@ -116,6 +116,8 @@ Brauhaus.Recipe.fromBeerXml = (xml) ->
                                     spice.weight = parseFloat spiceProperty.textContent
                                 when 'alpha'
                                     spice.aa = parseFloat spiceProperty.textContent
+                                when 'time'
+                                    spice.time = parseFloat spiceProperty.textContent
                                 when 'use'
                                     spice.use = spiceProperty.textContent
                                 when 'form'
